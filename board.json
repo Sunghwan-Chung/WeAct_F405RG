@@ -1,0 +1,15 @@
+{
+    "deploy": [
+        "../deploy.md"
+    ],
+    "docs": "",
+    "features": [],
+    "images": [
+        ""
+    ],
+    "mcu": "stm32f4",
+    "product": "WeAct_F405RG",
+    "thumbnail": "",
+    "url": "",
+    "vendor": "ST Microelectronics"
+}
