@@ -1,6 +1,6 @@
 MCU_SERIES = f4
 CMSIS_MCU = STM32F405xx
-AF_FILE = boards/WeAct_F405RG/stm32f405_af.csv
+AF_FILE = boards/stm32f405_af.csv
 LD_FILES = boards/WeAct_F405RG/stm32f405.ld boards/common_ifs.ld
 TEXT0_ADDR = 0x08000000
 TEXT1_ADDR = 0x08020000

@@ -7,8 +7,22 @@ MEMORY
 {
     FLASH (rx)      : ORIGIN = 0x08000000, LENGTH = 1024K /* entire flash */
     FLASH_START (rx): ORIGIN = 0x08000000, LENGTH = 16K /* sector 0 */
-    FLASH_FS (rx)   : ORIGIN = 0x08004000, LENGTH = 112K /* sectors 1,2,3,4 are for filesystem */
-    FLASH_TEXT (rx) : ORIGIN = 0x08020000, LENGTH = 896K /* sectors 5,6,7,8,9,10,11 */
+    
+  /*  FLASH_FS (rx)   : ORIGIN = 0x08004000, LENGTH = 112K   sectors 1,2,3,4 are for filesystem */
+  /*  FLASH_TEXT (rx) : ORIGIN = 0x08020000, LENGTH = 896K   sectors 5,6,7,8,9,10,11 */
+        
+  /*  FLASH_FS (rx)   : ORIGIN = 0x08004000, LENGTH = 240K */ 	
+  /*  FLASH_TEXT (rx) : ORIGIN = 0x08040000, LENGTH = 768K */ 	
+  
+  /*  FLASH_FS (rx)   : ORIGIN = 0x08004000, LENGTH = 304K */	
+  /*  FLASH_TEXT (rx) : ORIGIN = 0x08050000, LENGTH = 704K */ 	
+    
+  /*  FLASH_FS (rx)   : ORIGIN = 0x08004000, LENGTH = 496K */
+  /*  FLASH_TEXT (rx) : ORIGIN = 0x08080000, LENGTH = 512K *//* min req. 15k + 330k */
+  
+    FLASH_FS (rx)   : ORIGIN = 0x08004000, LENGTH = 624K 
+    FLASH_TEXT (rx) : ORIGIN = 0x080A0000, LENGTH = 384K /* min req. 15k + 330k */
+  
     CCMRAM (xrw)    : ORIGIN = 0x10000000, LENGTH = 64K
     RAM (xrw)       : ORIGIN = 0x20000000, LENGTH = 128K
 }
